@@ -1,0 +1,24 @@
+.navbar {
+  height: 5em;
+  width: 100vw;
+  max-width: 75em;
+  margin: 0 auto;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.desktop-menu-list-items {
+  margin: 1em;
+  cursor: pointer;
+}
+
+.desktop-menu-list-items:hover {
+  color: yellow;
+  padding-bottom: 0.5em;
+  border-bottom: 3px solid yellow;
+}
