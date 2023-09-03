@@ -1,4 +1,6 @@
+import "../styles/Home.css";
 import { Link } from "react-scroll";
+import profilePic from "../assets/profile_pic.png";
 
 export default function Home() {
   return (
@@ -12,14 +14,14 @@ export default function Home() {
             Web Developer
           </span>
           <p className="intro-para">
-            I am a skilled web developer with expertise in React JS and interest
-            in Front End Development.
+            I am a skilled web developer with expertise <br /> in React JS and
+            interest in Front End Development.
           </p>
           <Link>
             <button className="btn">Hire me</button>
           </Link>
         </div>
-        <img src="" alt="" />
+        <img src={profilePic} alt="Profile Picture" className="bg" />
       </section>
     </>
   );
