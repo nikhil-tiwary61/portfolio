@@ -14,6 +14,14 @@
   -webkit-text-size-adjust: 100%;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: transparent;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -24,11 +32,13 @@ a:hover {
 }
 
 body {
-  margin: 0;
+  /* margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 100vh; */
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 h1 {
