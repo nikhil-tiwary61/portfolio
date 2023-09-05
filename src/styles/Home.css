@@ -47,3 +47,9 @@
   border-radius: 2em;
   font-size: medium;
 }
+
+.btn > img {
+  width: 1.1em;
+  object-fit: cover;
+  margin-right: 0.5em;
+}

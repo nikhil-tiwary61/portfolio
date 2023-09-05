@@ -1,6 +1,7 @@
 import "../styles/Home.css";
 import { Link } from "react-scroll";
 import profilePic from "../assets/profile_pic.png";
+import hireMe from "../assets/hire_me.png";
 
 export default function Home() {
   return (
@@ -18,7 +19,10 @@ export default function Home() {
             interest in Front End Development.
           </p>
           <Link>
-            <button className="btn">Hire me</button>
+            <button className="btn">
+              <img src={hireMe} alt="Hire Me Icon" />
+              Hire me
+            </button>
           </Link>
         </div>
         <img src={profilePic} alt="Profile Picture" className="bg" />

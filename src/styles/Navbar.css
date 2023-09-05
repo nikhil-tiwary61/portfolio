@@ -31,3 +31,7 @@
   border-radius: 2em;
   height: 3em;
 }
+
+#contact-btn > img {
+  width: 1.4em;
+}
