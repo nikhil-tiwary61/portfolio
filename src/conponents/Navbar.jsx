@@ -1,5 +1,6 @@
 import "../styles/Navbar.css";
 import { Link } from "react-scroll";
+import contactMe from "../assets/contact_me.png";
 
 export default function Navbar() {
   return (
@@ -14,7 +15,10 @@ export default function Navbar() {
           <Link className="desktop-menu-list-items">Skills</Link>
           <Link className="desktop-menu-list-items">Projects</Link>
         </div>
-        <button>Contact Me</button>
+        <button id="contact-btn">
+          <img src={contactMe} alt="Contact Me Icon" />
+          Contact Me
+        </button>
       </nav>
     </>
   );

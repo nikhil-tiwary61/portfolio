@@ -22,3 +22,12 @@
   padding-bottom: 0.5em;
   border-bottom: 3px solid yellow;
 }
+
+#contact-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  border-radius: 2em;
+  height: 3em;
+}
