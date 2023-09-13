@@ -1,40 +1,7 @@
 import "../styles/Projects.css";
-import dummyImage from "../assets/about_pic.avif";
-import HTML5 from "../assets/skills/HTML5.png";
-import CSS3 from "../assets/skills/CSS3.png";
-import JAVASCRIPT from "../assets/skills/JAVASCRIPT.png";
-import REACT from "../assets/skills/REACT.png";
-import REDUX from "../assets/skills/REDUX.png";
-import NODE from "../assets/skills/NODE.png";
-import EXPRESS from "../assets/skills/EXPRESS.png";
-import MONGODB from "../assets/skills/MONGODB.png";
-import MONGOOSE from "../assets/skills/MONGOOSE.png";
-import GIT from "../assets/skills/GIT.png";
-import GITHUB from "../assets/skills/GITHUB.png";
+import { projects } from "../../data/data";
 
 export default function Projects() {
-  const projects = [
-    {
-      id: 1,
-      img: dummyImage,
-      title: "Project Title",
-      desc: "This is the description for the project",
-      tech: [
-        HTML5,
-        CSS3,
-        JAVASCRIPT,
-        REACT,
-        REDUX,
-        NODE,
-        EXPRESS,
-        MONGODB,
-        MONGOOSE,
-        GIT,
-        GITHUB,
-      ],
-      date: "Aug 2023",
-    },
-  ];
   return (
     <section id="projects">
       <div>Projects</div>
