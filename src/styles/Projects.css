@@ -9,7 +9,7 @@
 }
 .card-img {
   width: inherit;
-  height: 15em;
+  height: 12em;
 }
 .card-img > img {
   object-fit: cover;
@@ -23,6 +23,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+.card-text > p {
+  color: gray;
+}
+#tech-used {
+  font-weight: 900;
+}
+.tech-icons {
+  width: 1em;
+  margin: 0 2px;
+  border-radius: 2px;
 }
 .card-btn {
   display: flex;
