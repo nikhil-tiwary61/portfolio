@@ -5,4 +5,13 @@
   margin: 0 auto;
   overflow: hidden;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#about > img {
+  object-fit: contain;
+  width: 30em;
 }
