@@ -1,14 +1,15 @@
-import HTML5 from "../assets/skills/HTML5.PNG";
-import CSS3 from "../assets/skills/CSS3.PNG";
-import JAVASCRIPT from "../assets/skills/JAVASCRIPT.PNG";
-import REACT from "../assets/skills/REACT.PNG";
-import REDUX from "../assets/skills/REDUX.PNG";
-import NODE from "../assets/skills/NODE.PNG";
-import EXPRESS from "../assets/skills/EXPRESS.PNG";
-import MONGODB from "../assets/skills/MONGODB.PNG";
-import MONGOOSE from "../assets/skills/MONGOOSE.PNG";
-import GIT from "../assets/skills/GIT.PNG";
-import GITHUB from "../assets/skills/GITHUB.PNG";
+import "../styles/Skills.css";
+import HTML5 from "../assets/skills/HTML5.png";
+import CSS3 from "../assets/skills/CSS3.png";
+import JAVASCRIPT from "../assets/skills/JAVASCRIPT.png";
+import REACT from "../assets/skills/REACT.png";
+import REDUX from "../assets/skills/REDUX.png";
+import NODE from "../assets/skills/NODE.png";
+import EXPRESS from "../assets/skills/EXPRESS.png";
+import MONGODB from "../assets/skills/MONGODB.png";
+import MONGOOSE from "../assets/skills/MONGOOSE.png";
+import GIT from "../assets/skills/GIT.png";
+import GITHUB from "../assets/skills/GITHUB.png";
 
 export default function Skills() {
   const technologies = [
@@ -40,17 +41,17 @@ export default function Skills() {
     },
   ];
   return (
-    <section>
-      <div>Skills</div>
+    <section id="skills">
+      <h2>Skills</h2>
       {technologies.map((technology, index) => {
         return (
           <div key={index} className="tech-tile">
             <div>{technology.title}</div>
-            <div>
+            <div className="skills-block">
               {technology.skills.map((skill, index) => {
                 return (
-                  <div key={index}>
-                    <img src={skill.icon} alt={skill.name} />
+                  <div key={index} className="skill-tile">
+                    <img src={skill.icon} alt={skill.name} className="skill" />
                   </div>
                 );
               })}

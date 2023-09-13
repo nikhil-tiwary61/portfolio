@@ -1,0 +1,31 @@
+#skills {
+  height: calc(100vh - 4em);
+  width: 100vw;
+  max-width: 75em;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.skills-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.skill-tile {
+  background: white;
+  border-radius: 1em;
+  width: 7em;
+  height: 7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.skill {
+  object-fit: contain;
+  width: 90%;
+}
