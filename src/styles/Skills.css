@@ -1,10 +1,10 @@
 #skills {
-  height: calc(100vh - 4em);
+  /* height: calc(100vh - 4em); */
   width: 100vw;
   max-width: 75em;
   margin: 0 auto;
   overflow: hidden;
-  position: relative;
+  /* position: relative; */
 }
 
 .skills-block {
@@ -15,6 +15,18 @@
 }
 
 .skill-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-tile:hover {
+  transform: translateY(-1em);
+  transition: 0.3s;
+}
+
+.skill-image-tile {
   background: white;
   border-radius: 1em;
   width: 7em;

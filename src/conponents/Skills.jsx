@@ -43,19 +43,29 @@ export default function Skills() {
   return (
     <section id="skills">
       <h2>Skills</h2>
+      <br />
       {technologies.map((technology, index) => {
         return (
           <div key={index} className="tech-tile">
             <div>{technology.title}</div>
+            <br />
             <div className="skills-block">
               {technology.skills.map((skill, index) => {
                 return (
-                  <div key={index} className="skill-tile">
-                    <img src={skill.icon} alt={skill.name} className="skill" />
+                  <div className="skill-tile" key={index}>
+                    <div className="skill-image-tile">
+                      <img
+                        src={skill.icon}
+                        alt={skill.name}
+                        className="skill"
+                      />
+                    </div>
+                    <div>{skill.name}</div>
                   </div>
                 );
               })}
             </div>
+            <br />
           </div>
         );
       })}
