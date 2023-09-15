@@ -4,7 +4,7 @@ import { projects } from "../../data/data";
 export default function Projects() {
   return (
     <section id="projects">
-      <div>Projects</div>
+      <div className="section-heading">Projects</div>
       {projects.map((project, index) => {
         return (
           <div className="card" key={index}>

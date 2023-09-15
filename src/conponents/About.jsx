@@ -1,5 +1,5 @@
 import "../styles/About.css";
-import AboutPic from "../assets/about_pic.avif";
+import AboutPic from "../assets/about_pic.png";
 
 export default function About() {
   const about =
@@ -7,7 +7,7 @@ export default function About() {
   return (
     <section id="about">
       <div className="about-section">
-        <h2 id="section-heading">About Me</h2>
+        <h2 className="section-heading">About Me</h2>
         <div>{about}</div>
       </div>
       <img src={AboutPic} alt="About Illustration" />
