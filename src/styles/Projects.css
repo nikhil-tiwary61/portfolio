@@ -32,7 +32,8 @@
   font-weight: 900;
 }
 .tech-icons {
-  width: 1em;
+  width: 1.2em;
+  height: 1.2em;
   margin: 0 2px;
   border-radius: 2px;
 }
@@ -44,7 +45,7 @@
   gap: 1em;
   padding-bottom: 1.5em;
 }
-.card-btn > button {
+.card-btn > a > button {
   border-radius: 2em;
   width: 8em;
 }

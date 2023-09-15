@@ -10,6 +10,7 @@ import MONGODB from "../src/assets/skills/MONGODB.png";
 import MONGOOSE from "../src/assets/skills/MONGOOSE.png";
 import GIT from "../src/assets/skills/GIT.png";
 import GITHUB from "../src/assets/skills/GITHUB.png";
+import REACTROUTER from "../src/assets/skills/REACT-ROUTER.png";
 
 export const technologies = [
   {
@@ -42,23 +43,12 @@ export const technologies = [
 
 export const projects = [
   {
-    id: 1,
     img: dummyImage,
-    title: "Project Title",
-    desc: "This is the description for the project",
-    tech: [
-      HTML5,
-      CSS3,
-      JAVASCRIPT,
-      REACT,
-      REDUX,
-      NODE,
-      EXPRESS,
-      MONGODB,
-      MONGOOSE,
-      GIT,
-      GITHUB,
-    ],
+    title: "E-commerce App",
+    desc: "Features: Add to cart, Search bar, Filter by category",
+    tech: [REACT, REACTROUTER],
     date: "Aug 2023",
+    demo: "https://shopping-cart-neon-psi.vercel.app/",
+    code: "https://github.com/nikhil-tiwary61/shopping-cart",
   },
 ];

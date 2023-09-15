@@ -30,8 +30,12 @@ export default function Projects() {
               <p>{project.date}</p>
             </div>
             <div className="card-btn">
-              <button>Demo</button>
-              <button>Code</button>
+              <a href={project.demo} target="_blank" rel="noreferrer">
+                <button>Demo</button>
+              </a>
+              <a href={project.code} target="_blank" rel="noreferrer">
+                <button>Code</button>
+              </a>
             </div>
           </div>
         );
