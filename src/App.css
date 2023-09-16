@@ -2,10 +2,20 @@
   --deepBlue: #002333;
 }
 
-.section-heading {
+h2 {
   font-size: 3em;
   font-weight: 900;
   margin-bottom: 0.75em;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: 400;
 }
 
 .blue-background {
