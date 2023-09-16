@@ -1,5 +1,9 @@
 :root {
   --deepBlue: #002333;
+  /* --first-color: #233142;
+  --second-color: #455d7a; */
+  --third-color: #f95959;
+  --fourth-color: #e3e3e3;
 }
 
 h2 {
@@ -20,4 +24,9 @@ h4 {
 
 .blue-background {
   background: var(--deepBlue);
+}
+
+button:hover {
+  background: var(--third-color);
+  color: var(--fourth-color);
 }

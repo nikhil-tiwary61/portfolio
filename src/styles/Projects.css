@@ -1,7 +1,22 @@
+#projects {
+  width: 100vw;
+  max-width: 75em;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 3em 5em;
+}
+
+#project-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 2em 8em;
+}
+
 .card {
   background: #181a1b;
   border-radius: 1em;
-  width: 20em;
+  width: 18em;
 }
 .card-img {
   width: inherit;
@@ -43,5 +58,11 @@
 }
 .card-btn > a > button {
   border-radius: 2em;
-  width: 8em;
+  width: 7em;
+}
+
+@media screen and (max-width: 768px) {
+  #project-grid {
+    grid-template-columns: auto;
+  }
 }
