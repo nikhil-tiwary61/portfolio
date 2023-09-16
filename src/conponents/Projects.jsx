@@ -3,8 +3,8 @@ import { projects } from "../../data/data";
 
 export default function Projects() {
   return (
-    <section id="projects">
-      <div className="section-heading">Projects</div>
+    <section id="projects" className="blue-background">
+      <h2 className="section-heading">Projects</h2>
       {projects.map((project, index) => {
         return (
           <div className="card" key={index}>

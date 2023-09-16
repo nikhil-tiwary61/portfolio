@@ -1,4 +1,13 @@
+:root {
+  --deepBlue: #002333;
+}
+
 .section-heading {
   font-size: 3em;
   font-weight: 900;
+  margin-bottom: 0.75em;
+}
+
+.blue-background {
+  background: var(--deepBlue);
 }
