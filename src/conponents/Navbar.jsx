@@ -10,10 +10,46 @@ export default function Navbar() {
           <Link>Nikhil Tiwary</Link>
         </div>
         <div className="desktop-menu">
-          <Link className="desktop-menu-list-items">Home</Link>
-          <Link className="desktop-menu-list-items">About</Link>
-          <Link className="desktop-menu-list-items">Skills</Link>
-          <Link className="desktop-menu-list-items">Projects</Link>
+          <Link
+            activeClass="active"
+            to="intro"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            className="desktop-menu-list-items"
+          >
+            Home
+          </Link>
+          <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={0}
+            className="desktop-menu-list-items"
+          >
+            About
+          </Link>
+          <Link
+            activeClass="active"
+            to="skills"
+            spy={true}
+            smooth={true}
+            offset={0}
+            className="desktop-menu-list-items"
+          >
+            Skills
+          </Link>
+          <Link
+            activeClass="active"
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={0}
+            className="desktop-menu-list-items"
+          >
+            Projects
+          </Link>
         </div>
         <button id="contact-btn">
           <img src={contactMe} alt="Contact Me Icon" />
