@@ -1,4 +1,4 @@
-import dummyImage from "../src/assets/about_pic.avif";
+// Icon imports
 import HTML5 from "../src/assets/skills/HTML5.png";
 import CSS3 from "../src/assets/skills/CSS3.png";
 import JAVASCRIPT from "../src/assets/skills/JAVASCRIPT.png";
@@ -13,7 +13,13 @@ import FIREBASE from "../src/assets/skills/FIREBASE.png";
 import GIT from "../src/assets/skills/GIT.png";
 import GITHUB from "../src/assets/skills/GITHUB.png";
 
+//Project preview imports
 import ECOMMERCE from "../src/assets/projectPreviews/ECOMMERCE.jpeg";
+import CVBUILDER from "../src/assets/projectPreviews/CVBUILDER.jpeg";
+import CHATAPP from "../src/assets/projectPreviews/CHATAPP.jpeg";
+import TICTACTOE from "../src/assets/projectPreviews/TICTACTOE.jpeg";
+import CALCULATOR from "../src/assets/projectPreviews/CALCULATOR.jpeg";
+import ROCKPAPERSCISSOR from "../src/assets/projectPreviews/ROCKPAPERSCISSOR.jpeg";
 
 export const technologies = [
   {
@@ -59,16 +65,16 @@ export const projects = [
     title: "CV Builder",
     desc: "Features: Build resume, Print the resume",
     tech: [REACT],
-    img: dummyImage,
+    img: CVBUILDER,
     date: "August 2023",
     demo: "https://cv-builder-theta-ecru.vercel.app/",
     code: "https://github.com/nikhil-tiwary61/cv-builder",
   },
   {
-    title: "Gossip - Real time chat app",
+    title: "Gossip: Real time chat app",
     desc: "Features: Google Sign In",
     tech: [REACT, FIREBASE],
-    img: dummyImage,
+    img: CHATAPP,
     date: "August 2023",
     demo: "https://gossip-kappa.vercel.app/",
     code: "https://github.com/nikhil-tiwary61/gossip",
@@ -77,7 +83,7 @@ export const projects = [
     title: "Tic-Tac-Toe",
     desc: "Collaborated with the back-end team to make the front-end for the project",
     tech: [JAVASCRIPT, HTML5, CSS3],
-    img: dummyImage,
+    img: TICTACTOE,
     date: "May 2023",
     demo: "https://nikhil-tiwary61.github.io/odin-tic-tac-toe/",
     code: "https://github.com/nikhil-tiwary61/odin-tic-tac-toe",
@@ -86,7 +92,7 @@ export const projects = [
     title: "Calculator",
     desc: "A calculator app for basic mathematical operations",
     tech: [JAVASCRIPT, HTML5, CSS3],
-    img: dummyImage,
+    img: CALCULATOR,
     date: "June 2023",
     demo: "https://nikhil-tiwary61.github.io/calculator/",
     code: "https://github.com/nikhil-tiwary61/calculator",
@@ -95,7 +101,7 @@ export const projects = [
     title: "Rock-Paper-Scissor",
     desc: "Popular rock-paper-scissor game, best of 5",
     tech: [JAVASCRIPT, HTML5, CSS3],
-    img: dummyImage,
+    img: ROCKPAPERSCISSOR,
     date: "March 2023",
     demo: "https://nikhil-tiwary61.github.io/rock-paper-scissors/",
     code: "https://github.com/nikhil-tiwary61/rock-paper-scissors",
