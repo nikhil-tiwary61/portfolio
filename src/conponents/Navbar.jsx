@@ -58,7 +58,12 @@ export default function Navbar() {
             Projects
           </Link>
         </div>
-        <button id="contact-btn">
+        <button
+          id="contact-btn"
+          onClick={() => {
+            document.getElementById("contact-me").scrollIntoView();
+          }}
+        >
           <img src={contactMe} alt="Contact Me Icon" />
           Contact Me
         </button>
@@ -121,6 +126,18 @@ export default function Navbar() {
             onClick={() => setShowMenu(false)}
           >
             Projects
+          </Link>
+          <Link
+            activeClass="active"
+            to="contact-me"
+            spy={true}
+            smooth={true}
+            offset={-62}
+            duration={500}
+            className="list-items"
+            onClick={() => setShowMenu(false)}
+          >
+            Contact Me
           </Link>
         </div>
       </div>
