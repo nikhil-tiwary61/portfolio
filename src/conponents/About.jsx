@@ -8,7 +8,9 @@ export default function About() {
     <section className="blue-background">
       <div id="about">
         <div className="about-section">
-          <h2>About Me</h2>
+          <h2>
+            About Me <span className="line"></span>
+          </h2>
           <p>{about}</p>
         </div>
         <img src={AboutPic} alt="About Illustration" />

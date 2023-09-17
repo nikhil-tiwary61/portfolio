@@ -10,6 +10,8 @@ h2 {
   font-size: 3em;
   font-weight: 900;
   margin-bottom: 0.75em;
+  display: flex;
+  align-items: center;
 }
 
 h3 {
@@ -26,7 +28,22 @@ h4 {
   background: var(--deepBlue);
 }
 
+.line {
+  display: inline-block;
+  height: 0.2em;
+  width: 3em;
+  background-color: var(--third-color);
+  margin-left: 0.3em;
+  border-radius: 1em;
+}
+
 button:hover {
   background: var(--third-color);
   color: var(--fourth-color);
+}
+
+@media screen and (max-width: 625px) {
+  .line {
+    display: none;
+  }
 }

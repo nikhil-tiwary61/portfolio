@@ -5,7 +5,9 @@ export default function Projects() {
   return (
     <section className="blue-background">
       <div id="projects">
-        <h2>Projects</h2>
+        <h2>
+          Projects <span className="line"></span>
+        </h2>
         <div id="project-grid">
           {projects.map((project, index) => {
             return (
