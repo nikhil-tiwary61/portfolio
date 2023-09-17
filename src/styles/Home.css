@@ -53,3 +53,17 @@
   object-fit: cover;
   margin-right: 0.5em;
 }
+
+@media screen and (max-width: 650px) {
+  .bg {
+    right: -7em;
+  }
+}
+@media screen and (max-width: 425px) {
+  .bg {
+    display: none;
+  }
+  .intro-content {
+    font-size: 2em;
+  }
+}
