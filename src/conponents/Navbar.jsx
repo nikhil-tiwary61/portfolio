@@ -29,7 +29,7 @@ export default function Navbar() {
             to="about"
             spy={true}
             smooth={true}
-            offset={-62}
+            offset={-63}
             duration={500}
             className="desktop-menu-list-items"
           >
@@ -96,7 +96,7 @@ export default function Navbar() {
             to="about"
             spy={true}
             smooth={true}
-            offset={-62}
+            offset={-63}
             duration={500}
             className="list-items"
             onClick={() => setShowMenu(false)}
