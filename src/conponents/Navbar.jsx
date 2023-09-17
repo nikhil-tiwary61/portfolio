@@ -63,6 +63,7 @@ export default function Navbar() {
           Contact Me
         </button>
 
+        {/* mobile menu */}
         <img
           src={menu}
           alt="Menu"

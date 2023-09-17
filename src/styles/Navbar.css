@@ -52,6 +52,12 @@ nav {
 }
 
 /* burger menu */
+.mob-menu {
+  display: none;
+  width: 2em;
+  object-fit: contain;
+}
+
 .nav-menu {
   position: absolute;
   top: 4em;
@@ -69,4 +75,14 @@ nav {
   padding: 0.5em 3em;
   margin: 0.25em;
   background: #252525;
+}
+
+@media screen and (max-width: 680px) {
+  .mob-menu {
+    display: block;
+  }
+  .desktop-menu,
+  #contact-btn {
+    display: none;
+  }
 }
