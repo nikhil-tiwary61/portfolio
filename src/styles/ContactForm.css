@@ -1,0 +1,40 @@
+#contact-me {
+  width: 100vw;
+  max-width: 75em;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 3em 5em;
+  height: 100vh;
+}
+
+.contact-desc {
+  padding: 1em;
+  font-size: medium;
+  font-weight: 300;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 60em;
+}
+
+.client-name,
+.email,
+.msg {
+  font-size: medium;
+  width: 100%;
+  max-width: 40em;
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 0.5em;
+  color: white;
+  background: #252525;
+}
+
+.submit-btn {
+  margin-top: 1em;
+}
