@@ -1,3 +1,15 @@
+:root {
+  --dark: #181a1b;
+  --text-color: #f95959;
+}
+
+nav {
+  background-color: #181a1b;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
 .navbar {
   height: 4em;
   width: 100vw;
@@ -7,9 +19,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 2;
 }
 
 .desktop-menu-list-items {
@@ -18,9 +27,9 @@
 }
 
 .desktop-menu-list-items:hover {
-  color: yellow;
+  color: var(--text-color);
   padding-bottom: 0.5em;
-  border-bottom: 3px solid yellow;
+  border-bottom: 3px solid var(--text-color);
 }
 
 #contact-btn {
@@ -34,4 +43,10 @@
 
 #contact-btn > img {
   width: 1.4em;
+}
+
+.active {
+  color: var(--text-color);
+  border-bottom: 3px solid var(--text-color);
+  padding-bottom: 0.5em;
 }

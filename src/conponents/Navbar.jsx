@@ -4,8 +4,8 @@ import contactMe from "../assets/contact_me.png";
 
 export default function Navbar() {
   return (
-    <>
-      <nav className="navbar">
+    <nav>
+      <div className="navbar">
         <div className="name">
           <Link>Nikhil Tiwary</Link>
         </div>
@@ -16,6 +16,7 @@ export default function Navbar() {
             spy={true}
             smooth={true}
             offset={-100}
+            duration={500}
             className="desktop-menu-list-items"
           >
             Home
@@ -26,6 +27,7 @@ export default function Navbar() {
             spy={true}
             smooth={true}
             offset={0}
+            duration={500}
             className="desktop-menu-list-items"
           >
             About
@@ -36,6 +38,7 @@ export default function Navbar() {
             spy={true}
             smooth={true}
             offset={0}
+            duration={500}
             className="desktop-menu-list-items"
           >
             Skills
@@ -46,6 +49,7 @@ export default function Navbar() {
             spy={true}
             smooth={true}
             offset={0}
+            duration={500}
             className="desktop-menu-list-items"
           >
             Projects
@@ -55,7 +59,7 @@ export default function Navbar() {
           <img src={contactMe} alt="Contact Me Icon" />
           Contact Me
         </button>
-      </nav>
-    </>
+      </div>
+    </nav>
   );
 }
