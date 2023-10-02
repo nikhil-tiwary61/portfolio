@@ -2,6 +2,7 @@ import "../styles/Navbar.css";
 import { Link } from "react-scroll";
 import contactMe from "../assets/contact_me.png";
 import menu from "../assets/menu.png";
+import close from "../assets/closeBtn.png";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -70,7 +71,7 @@ export default function Navbar() {
 
         {/* mobile menu */}
         <img
-          src={menu}
+          src={showMenu ? close : menu}
           alt="Menu"
           className="mob-menu"
           onClick={() => setShowMenu(!showMenu)}
