@@ -11,7 +11,17 @@ export default function Navbar() {
     <nav>
       <div className="navbar">
         <div className="name">
-          <Link>Nikhil Tiwary</Link>
+          <Link
+            activeClass="active"
+            to="intro"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            className="desktop-menu-list-items"
+          >
+            Nikhil Tiwary
+          </Link>
         </div>
         <div className="desktop-menu">
           <Link
