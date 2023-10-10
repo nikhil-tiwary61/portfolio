@@ -47,6 +47,13 @@ button:hover {
   color: black;
 }
 
+button.lightMode {
+  border: 2px solid black;
+}
+input.lightMode {
+  border: 2px solid black;
+}
+
 @media screen and (max-width: 625px) {
   .line {
     display: none;

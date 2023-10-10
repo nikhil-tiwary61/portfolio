@@ -1,9 +1,12 @@
 import "../styles/Skills.css";
 import { technologies } from "../../data/data";
+import { useContext } from "react";
+import ThemeContext from "../context/ThemeContext";
 
 export default function Skills() {
+  const { theme } = useContext(ThemeContext);
   return (
-    <section id="skills">
+    <section id="skills" className={theme}>
       <h2>
         Skills <span className="line"></span>
       </h2>

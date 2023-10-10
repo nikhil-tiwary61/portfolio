@@ -1,8 +1,11 @@
 import "../styles/ContactForm.css";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { useContext } from "react";
+import ThemeContext from "../context/ThemeContext";
 
 export default function ContactForm() {
+  const { theme } = useContext(ThemeContext);
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -26,7 +29,7 @@ export default function ContactForm() {
       );
   };
   return (
-    <section id="contact-me">
+    <section id="contact-me" className={theme}>
       <h2>
         Contact Form <span className="line"></span>
       </h2>
@@ -52,7 +55,7 @@ export default function ContactForm() {
           className="msg"
           placeholder="Your Message"
         ></textarea>
-        <button type="submit" value="send" className="submit-btn">
+        <button type="submit" value="send" className={theme}>
           Submit
         </button>
       </form>

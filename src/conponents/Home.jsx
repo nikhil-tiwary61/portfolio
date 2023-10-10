@@ -5,11 +5,15 @@ import hireMe from "../assets/hire_me.png";
 import linkedin from "../assets/linkedin.png";
 import github from "../assets/github.png";
 import gmail from "../assets/gmail.png";
+import { useContext } from "react";
+import ThemeContext from "../context/ThemeContext";
 
 export default function Home() {
+  const { theme } = useContext(ThemeContext);
+
   return (
     <>
-      <section id="intro">
+      <section id="intro" className={theme}>
         <div className="intro-content">
           <span className="hello">Hello,</span>
           <span className="intro-text">
@@ -29,7 +33,7 @@ export default function Home() {
             offset={-62}
             duration={500}
           >
-            <button className="btn">
+            <button className={`btn ${theme}`}>
               <img src={hireMe} alt="Hire Me Icon" />
               Hire me
             </button>

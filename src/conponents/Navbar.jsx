@@ -12,7 +12,6 @@ export default function Navbar() {
   const { theme, setTheme } = useContext(ThemeContext);
   function handleClick() {
     setTheme(theme === "darkMode" ? "lightMode" : "darkMode");
-    console.log(theme);
   }
   return (
     <nav className={theme}>
