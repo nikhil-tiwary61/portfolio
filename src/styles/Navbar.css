@@ -22,6 +22,11 @@ nav {
   align-items: center;
 }
 
+.desktop-menu > button {
+  background: var(--dark);
+  object-fit: contain;
+}
+
 .desktop-menu-list-items {
   margin: 1em;
   cursor: pointer;

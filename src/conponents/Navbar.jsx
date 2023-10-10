@@ -1,6 +1,8 @@
 import "../styles/Navbar.css";
 import { Link } from "react-scroll";
 import contactMe from "../assets/contact_me.png";
+import light from "../assets/light.png";
+import dark from "../assets/dark.png";
 import menu from "../assets/menu.png";
 import close from "../assets/closeBtn.png";
 import { useState } from "react";
@@ -10,7 +12,7 @@ import ThemeContext from "../context/ThemeContext";
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
   const { theme, setTheme } = useContext(ThemeContext);
-  function handleClick() {
+  function handleTheme() {
     setTheme(theme === "darkMode" ? "lightMode" : "darkMode");
   }
   return (
@@ -74,8 +76,10 @@ export default function Navbar() {
           >
             Projects
           </Link>
+          <button onClick={handleTheme}>
+            <img src={theme === "darkMode" ? dark : light} alt="Theme Icon" />
+          </button>
         </div>
-        <button onClick={handleClick}>{theme}</button>
         <button
           id="contact-btn"
           className={theme}
@@ -158,6 +162,9 @@ export default function Navbar() {
           >
             Contact Me
           </Link>
+          <button onClick={handleTheme}>
+            <img src={theme === "darkMode" ? dark : light} alt="Theme Icon" />
+          </button>
         </div>
       </div>
     </nav>
