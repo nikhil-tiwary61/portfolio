@@ -4,11 +4,18 @@ import contactMe from "../assets/contact_me.png";
 import menu from "../assets/menu.png";
 import close from "../assets/closeBtn.png";
 import { useState } from "react";
+import { useContext } from "react";
+import ThemeContext from "../context/ThemeContext";
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
+  const { theme, setTheme } = useContext(ThemeContext);
+  function handleClick() {
+    setTheme(theme === "darkMode" ? "lightMode" : "darkMode");
+    console.log(theme);
+  }
   return (
-    <nav>
+    <nav className={theme}>
       <div className="navbar">
         <div className="name">
           <Link
@@ -69,8 +76,10 @@ export default function Navbar() {
             Projects
           </Link>
         </div>
+        <button onClick={handleClick}>{theme}</button>
         <button
           id="contact-btn"
+          className={theme}
           onClick={() => {
             document.getElementById("contact-me").scrollIntoView();
           }}

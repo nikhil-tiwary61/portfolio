@@ -42,6 +42,11 @@ button:hover {
   color: var(--fourth-color);
 }
 
+.lightMode {
+  background-color: white;
+  color: black;
+}
+
 @media screen and (max-width: 625px) {
   .line {
     display: none;

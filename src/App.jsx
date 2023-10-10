@@ -11,14 +11,9 @@ import { useState } from "react";
 
 function App() {
   const [theme, setTheme] = useState("darkMode");
-  function handleClick() {
-    setTheme(theme === "darkMode" ? "lightMode" : "darkMode");
-    console.log(theme);
-  }
   return (
-    <ThemeContext.Provider value={theme}>
+    <ThemeContext.Provider value={{ theme, setTheme }}>
       <Navbar />
-      <button onClick={handleClick}></button>
       <Home />
       <About />
       <Skills />
