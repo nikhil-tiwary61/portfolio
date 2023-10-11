@@ -78,7 +78,7 @@ export default function Navbar() {
           >
             Projects
           </Link>
-          <button onClick={handleTheme}>
+          <button onClick={handleTheme} className={theme}>
             <img src={theme === "darkMode" ? dark : light} alt="Theme Icon" />
           </button>
         </div>

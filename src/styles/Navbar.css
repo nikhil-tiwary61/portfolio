@@ -89,6 +89,10 @@ nav {
   background: #252525;
 }
 
+button.lightMode {
+  background-color: var(--light);
+}
+
 @media screen and (max-width: 680px) {
   .mob-menu {
     display: block;
