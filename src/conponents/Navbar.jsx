@@ -99,7 +99,7 @@ export default function Navbar() {
           onClick={() => setShowMenu(!showMenu)}
         />
         <div
-          className="nav-menu"
+          className={`nav-menu ${theme}`}
           style={{ display: showMenu ? "flex" : "none" }}
         >
           <Link

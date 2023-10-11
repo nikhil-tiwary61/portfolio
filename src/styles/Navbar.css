@@ -22,7 +22,8 @@ nav {
   align-items: center;
 }
 
-.desktop-menu > button {
+.desktop-menu > button,
+.nav-menu > button {
   background: var(--dark);
   object-fit: contain;
 }
@@ -75,6 +76,11 @@ nav {
   min-width: 15em;
   border-radius: 1em;
   background: var(--dark);
+}
+
+.lightMode > .list-items {
+  background: var(--light);
+  color: var(--dark);
 }
 
 .list-items {
