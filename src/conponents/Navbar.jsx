@@ -4,7 +4,9 @@ import contactMe from "../assets/contact_me.png";
 import light from "../assets/light.png";
 import dark from "../assets/dark.png";
 import menu from "../assets/menu.png";
+import menuLight from "../assets/menuLight.png";
 import close from "../assets/closeBtn.png";
+import closeLight from "../assets/closeBtnLight.png";
 import { useState } from "react";
 import { useContext } from "react";
 import ThemeContext from "../context/ThemeContext";
@@ -93,7 +95,18 @@ export default function Navbar() {
 
         {/* mobile menu */}
         <img
-          src={showMenu ? close : menu}
+          // src={showMenu ? close : menu}
+          src={
+            showMenu && theme === "darkMode"
+              ? close
+              : showMenu && theme === "lightMode"
+              ? closeLight
+              : !showMenu && theme === "darkMode"
+              ? menu
+              : !showMenu && theme === "lightMode"
+              ? menuLight
+              : ""
+          }
           alt="Menu"
           className="mob-menu"
           onClick={() => setShowMenu(!showMenu)}
