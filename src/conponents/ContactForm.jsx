@@ -29,36 +29,38 @@ export default function ContactForm() {
       );
   };
   return (
-    <section id="contact-me" className={theme}>
-      <h2>
-        Contact Form <span className="line"></span>
-      </h2>
-      <form className="contact-form" ref={form} onSubmit={sendEmail}>
-        <legend className="contactDesc">
-          Please fill out the form below to discuss any work opportunities.
-        </legend>
-        <input
-          type="text"
-          className="client-name"
-          placeholder="Your Name"
-          name="from_name"
-        />
-        <input
-          type="email"
-          className="email"
-          placeholder="Your Email"
-          name="from_email"
-        />
-        <textarea
-          name="message"
-          rows="5"
-          className="msg"
-          placeholder="Your Message"
-        ></textarea>
-        <button type="submit" value="send" className={theme}>
-          Submit
-        </button>
-      </form>
+    <section className={theme}>
+      <div id="contact-me">
+        <h2>
+          Contact Form <span className="line"></span>
+        </h2>
+        <form className="contact-form" ref={form} onSubmit={sendEmail}>
+          <legend className="contactDesc">
+            Please fill out the form below to discuss any work opportunities.
+          </legend>
+          <input
+            type="text"
+            className="client-name"
+            placeholder="Your Name"
+            name="from_name"
+          />
+          <input
+            type="email"
+            className="email"
+            placeholder="Your Email"
+            name="from_email"
+          />
+          <textarea
+            name="message"
+            rows="5"
+            className="msg"
+            placeholder="Your Message"
+          ></textarea>
+          <button type="submit" value="send" className={theme}>
+            Submit
+          </button>
+        </form>
+      </div>
     </section>
   );
 }
