@@ -2,8 +2,12 @@
   --deepBlue: #002333;
   /* --first-color: #233142;
   --second-color: #455d7a; */
+  --dark: #181a1b;
+  --light: #ffffff;
+  --black: black;
   --third-color: #f95959;
   --fourth-color: #e3e3e3;
+  --mob-list-item: #252525;
 }
 
 h2 {
@@ -43,15 +47,15 @@ button:hover {
 }
 
 .lightMode {
-  background-color: white;
-  color: black;
+  background-color: var(--light);
+  color: var(--black);
 }
 
 button.lightMode {
-  border: 2px solid black;
+  border: 2px solid var(--black);
 }
 input.lightMode {
-  border: 2px solid black;
+  border: 2px solid var(--black);
 }
 
 @media screen and (max-width: 625px) {

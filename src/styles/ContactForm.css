@@ -1,3 +1,5 @@
+@import "../App.css";
+
 #contact-me {
   width: 100vw;
   max-width: 75em;
@@ -31,8 +33,8 @@
   padding: 0.5em 1em;
   border: none;
   border-radius: 0.5em;
-  color: white;
-  background: #252525;
+  color: var(--light);
+  background: var(--mob-list-item);
 }
 
 .submit-btn {

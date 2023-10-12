@@ -1,11 +1,8 @@
-:root {
-  --dark: #181a1b;
-  --light: white;
-  --text-color: #f95959;
-}
+@import "../App.css";
 
 nav {
-  background-color: #181a1b;
+  background-color: var(--dark);
+  border-bottom: 1px solid var(--dark);
   position: sticky;
   top: 0;
   z-index: 1;
@@ -34,9 +31,9 @@ nav {
 }
 
 .desktop-menu-list-items:hover {
-  color: var(--text-color);
+  color: var(--third-color);
   padding-bottom: 0.5em;
-  border-bottom: 3px solid var(--text-color);
+  border-bottom: 3px solid var(--third-color);
 }
 
 #contact-btn {
@@ -53,8 +50,8 @@ nav {
 }
 
 .active {
-  color: var(--text-color);
-  border-bottom: 3px solid var(--text-color);
+  color: var(--third-color);
+  border-bottom: 3px solid var(--third-color);
   padding-bottom: 0.5em;
 }
 
